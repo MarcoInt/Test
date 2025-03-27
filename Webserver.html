@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webserver Funktionalität</title>
+    <link rel="stylesheet" href="Styles/Webserver.css">
+    <script language=" JavaScript" type="text/javascript" src="Skripts/Webserver.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Websiten für Dummys</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Webserver Funktionalität</h2>
+            <p>In den Folgenden 4 Abschnitten wird dir die Funktionalität eines Webservers erklärt </p>
+        </section>
+        <section>
+            <h3>Statische Webseiten:</h3>
+            <img src="images/static-website.png" alt="Statische Webseiten">
+            <p>Statische Webseiten bestehen aus festen Inhalten, die sich nicht ändern, es sei denn, der Entwickler aktualisiert die Dateien manuell. Sie werden direkt vom Webserver an den Browser des Benutzers gesendet.</p>
+        </section>
+        <section>
+            <h3>Dynamische Webseiten:</h3>
+            <img src="images/dynamic-website.png" alt="Dynamische Webseiten">
+            <p>Dynamische Webseiten generieren Inhalte in Echtzeit basierend auf Benutzereingaben oder anderen Faktoren. Sie verwenden serverseitige Skriptsprachen, um Inhalte zu erstellen, bevor sie an den Browser gesendet werden.</p>
+        </section>
+        <section>
+            <h3>Serverseitige Skriptsprachen:</h3>
+            <img src="images/server-side-scripting.png" alt="Serverseitige Skriptsprachen">
+            <p>Serverseitige Skriptsprachen wie PHP, Python und Node.js werden auf dem Server ausgeführt. Sie ermöglichen die Erstellung dynamischer Inhalte und die Interaktion mit Datenbanken.</p>
+        </section>
+        <section>
+            <h3>Clientseitige Skriptsprachen:</h3>
+            <img src="images/client-side-scripting.png" alt="Clientseitige Skriptsprachen">
+            <p>Clientseitige Skriptsprachen wie JavaScript werden im Browser des Benutzers ausgeführt. Sie ermöglichen die Manipulation der Webseite nach dem Laden und die Interaktion mit dem Benutzer ohne erneutes Laden der Seite.</p>
+        </section>
+        <section>   
+            <h2> Das DOM:</h2>
+            <p> Document Objekt Model</p>
+        </section>
+        <section>
+            <h3>Was ist das DOM? </h3>
+            <p> Das Document Object Model (DOM, engl. für Dokumenten-Objekt-Modell) ist eine Spezifikation einer Programmierschnittstelle, welche HTML- oder XML-Dokumente als eine Baumstruktur darstellt, in der jeder Knoten ein Objekt ist, welches einen Teil des Dokumentes repräsentiert, z. B. einen Absatz, eine Überschrift, ein Video oder etwa eine Tabellenzelle. Die Schnittstelle ist plattform- und programmiersprachenunabhängig und erlaubt damit standardisiert, die Struktur und das Layout eines Dokumentes zu verändern. Im Webbrowser bildet dies einen wichtigen Baustein für dynamische Webseiten.</p>
+            <div> 
+                <img src="Images/DOM.img" alt="DOM">
+            </div>
+        </section>
+        <section> 
+            <h3> Erklärung auf YouTube:</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KShnPYN-voI?si=HiG5CYfH6UK9QpIp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section> 
+            <h3>JavaScript Auswahl Menü (Nur ein Test)</h3>
+            <label for="auswahl">Wählen Sie eine Option:</label>
+            <select id="auswahl" onchange="zeigeAuswahl()">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <p id="anzeige"></p>
+        </section>
+        <section>
+            <h3>Essens-Auswahlmenü</h3>
+            <p>Bitte wählen sie ein Menüs aus</p>
+            <form id="essenForm">
+                <input type="checkbox" id="fruehstueck" name="essen" value="10" onchange="berechnePreis()">
+                <label for="fruehstueck">Frühstück (10 €)</label><br>
+                <input type="checkbox" id="mittagessen" name="essen" value="20" onchange="berechnePreis()">
+                <label for="mittagessen">Mittagessen (20 €)</label><br>
+                <input type="checkbox" id="abendessen" name="essen" value="15" onchange="berechnePreis()">
+                <label for="abendessen">Abendessen (15 €)</label><br>
+            </form>
+            <p id="preis">Zu zahlen: 0 €</p>
+
+            <p>Lass es dir schmecken bruder</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Webserver Tutorial</p>
+    </footer>
+</body>
+</html>
